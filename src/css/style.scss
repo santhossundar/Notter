@@ -1,2 +1,54 @@
+$primary: hsl(0, 0, 0);
+
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+@mixin bg($s, $l, $a) {
+    background-color: hsla(0, $s, $l, $a);
+}
+
+@mixin btn($s, $l, $a) {
+    background-color: hsla(180, $s, $l, $a);
+}
+
+:root {
+    @include bg(0, 0, 1);
+}
+
+.navbar {
+    @include bg(50, 0, 1);
+    padding: 15px;
+    
+    .navbar-brand {
+        color: white;
+    }
+
+    .btn-add-new-post {
+        @include btn(30, 70%, .7);
+        align-items: center;
+        justify-content: center;
+        float: right;
+    }
+    
+    .btn-add-new-post:hover {
+        @include btn(30, 100%, 1);
+        transition: .7s;
+    }
+}
+
+.container-fluid {
+    .posts {
+        @include bg(100, 100, 1);
+        color: white;
+        padding: 25px; 
+    }    
+}
+
+.create-post {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    padding: 30px;
+    @include bg(0, 0, .7);
+}
+
 

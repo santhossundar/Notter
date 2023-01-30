@@ -1,9 +1,12 @@
 import React from "react";
+import NavBar from "./components/NavBar";
+import Post from "./components/Post";
 
 const App = () => {
   return (
     <div>
-      Hello!
+      <NavBar/>
+      <Post/>
     </div>
   );
 };
