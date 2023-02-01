@@ -11965,11 +11965,7 @@ textarea.form-control-lg {
 }
 .navbar .btn-add-new-post {
   background-color: rgba(179, 179, 179, 0.7);
-  align-items: center;
-  justify-content: center;
-  float: right;
-  width: 35px;
-  height: 30px;
+  border-radius: 25px;
 }
 .navbar .btn-add-new-post:hover {
   background-color: #cccccc;
