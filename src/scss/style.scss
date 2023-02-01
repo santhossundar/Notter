@@ -2,6 +2,10 @@ $primary: hsl(0, 0, 0);
 
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
+@mixin text($s, $l) {
+    color: hsl(0, $s, $l);
+}
+
 @mixin bg($s, $l, $a) {
     background-color: hsla(0, $s, $l, $a);
 }
@@ -11,26 +15,28 @@ $primary: hsl(0, 0, 0);
 }
 
 :root {
-    @include bg(0, 0, 1);
+    @include bg(10, 10, 1);
 }
 
 .navbar {
-    @include bg(50, 0, 1);
+    @include bg(0, 40, 1);
     padding: 15px;
     
     .navbar-brand {
-        color: white;
+        @include text(0, 80);
     }
 
     .btn-add-new-post {
-        @include btn(30, 70%, .7);
+        @include btn(0, 70, .7);
         align-items: center;
         justify-content: center;
         float: right;
+        width: 35px;
+        height: 30px;
     }
     
     .btn-add-new-post:hover {
-        @include btn(30, 100%, 1);
+        @include btn(0, 80, 1);
         transition: .7s;
     }
 }
@@ -47,6 +53,12 @@ $primary: hsl(0, 0, 0);
     left: 30%;
     padding: 30px;
     @include bg(0, 0, .7);
+}
+
+.post {
+    @include bg(0, 25, .8);
+    padding: 15px;
+    border-radius: 5px;
 }
 
 

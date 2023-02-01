@@ -11951,24 +11951,26 @@ textarea.form-control-lg {
   }
 }
 :root {
-  background-color: black;
+  background-color: #1c1717;
 }
 
 .navbar {
-  background-color: black;
+  background-color: #666666;
   padding: 15px;
 }
 .navbar .navbar-brand {
-  color: white;
+  color: #cccccc;
 }
 .navbar .btn-add-new-post {
-  background-color: rgba(156, 201, 201, 0.7);
+  background-color: rgba(179, 179, 179, 0.7);
   align-items: center;
   justify-content: center;
   float: right;
+  width: 35px;
+  height: 30px;
 }
 .navbar .btn-add-new-post:hover {
-  background-color: white;
+  background-color: #cccccc;
   transition: 0.7s;
 }
 
@@ -11984,4 +11986,10 @@ textarea.form-control-lg {
   left: 30%;
   padding: 30px;
   background-color: rgba(0, 0, 0, 0.7);
+}
+
+.post {
+  background-color: rgba(64, 64, 64, 0.8);
+  padding: 15px;
+  border-radius: 5px;
 }/*# sourceMappingURL=style.css.map */
