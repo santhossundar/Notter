@@ -1,13 +1,26 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
+import Axios from 'axios';
+import Post from './Post';
 
-const Post = () => {
+const Posts = () => {
+    const [postData, setPostData] = useState([]);
+    useEffect(() => {
+        Axios.get('http://localhost:5000/posts')
+            .then(response => {
+                setPostData(response.data);
+            })
+            .catch(error => {
+                console.log(error);
+            });
+    }, []);
+
     return (
         <div className='posts container-fluid'>
-            <p className="post">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam doloribus minima ipsa quas explicabo eaque possimus modi voluptatibus molestiae architecto libero, excepturi eius placeat dolorum nam atque velit cum reiciendis.
-            </p>
+            {postData.map(item => {
+            return <Post content={item.content} key={item.id}/>
+        })}
         </div>
     )
 }
 
-export default Post
+export default Posts
