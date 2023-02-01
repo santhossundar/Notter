@@ -35,13 +35,11 @@ $primary: hsl(0, 0, 0);
     }
 }
 
-.container-fluid {
-    .posts {
-        @include bg(100, 100, 1);
-        color: white;
-        padding: 25px; 
-    }    
-}
+.posts {
+    @include bg(0, 20, 1);
+    color: white;
+    padding: 15px; 
+} 
 
 .create-post {
     position: absolute;

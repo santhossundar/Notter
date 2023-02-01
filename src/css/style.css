@@ -11972,10 +11972,10 @@ textarea.form-control-lg {
   transition: 0.7s;
 }
 
-.container-fluid .posts, .container-sm .posts, .container-md .posts, .container-lg .posts, .container-xl .posts, .container-xxl .posts {
-  background-color: white;
+.posts {
+  background-color: #333333;
   color: white;
-  padding: 25px;
+  padding: 15px;
 }
 
 .create-post {

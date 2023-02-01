@@ -1,12 +1,12 @@
 import React from "react";
 import NavBar from "./components/NavBar";
-import Post from "./components/Post";
+import Posts from "./components/Posts";
 
 const App = () => {
   return (
     <div>
       <NavBar/>
-      <Post/>
+      <Posts/>
     </div>
   );
 };
