@@ -11989,8 +11989,15 @@ textarea.form-control-lg {
 }
 .create-post h3, .create-post .h3 {
   color: #e6e6e6;
+  margin-bottom: 20px;
 }
 .create-post .btn-primary {
+  background-color: rgba(179, 179, 179, 0.9);
+  margin-top: 20px;
+  padding: 5px 25px 5px 25px;
+  border-radius: 15px;
+}
+.create-post .btn-primary:hover {
   background-color: white;
 }
 

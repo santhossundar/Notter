@@ -56,10 +56,18 @@ $primary: hsl(0, 0, 0);
 
     h3 {
         @include text(0, 90);
+        margin-bottom: 20px;
     }
 
     .btn-primary {
-        @include btn(0, 100, 1);
+        @include btn(0, 70, .9);
+        margin-top: 20px;
+        padding: 5px 25px 5px 25px;
+        border-radius: 15px;
+
+        &:hover {
+            @include btn(0, 100, 1);
+        }
     }
 }
 
