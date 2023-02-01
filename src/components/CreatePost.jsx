@@ -35,8 +35,8 @@ const CreatePost = () => {
 
     return (
         <div className='create-post'>
+            <h3>ADD POST</h3>
             <form action="#">
-                <caption>ADD POST</caption>
                 <textarea className='form-control' rows='3' type='text'
                     value={content} onChange={contentHandler} />
                 <button className='btn-primary' type='submit'
